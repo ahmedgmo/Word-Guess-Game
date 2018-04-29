@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron {
-    background:rgba(133, 131, 131, 0.445);
+    background:rgba(116, 115, 115, 0.555);
 }
 
 h1 {
@@ -13,14 +13,20 @@ h1 {
     font-size: 7rem; 
     text-align: center;
     color: white;
+    background: -webkit-linear-gradient(rgb(196, 195, 195), whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Black Han Sans', sans-serif;
     font-size: 4rem;
     text-align: center;
     font-weight: 700;
     color: rgb(202, 20, 20);
+    background: -webkit-linear-gradient(rgb(245, 84, 84), rgb(121, 27, 27));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -28,6 +34,7 @@ h3 {
    font-size: 2rem;
    text-align: center;
    color: whitesmoke;
+
 }
 
 #EnterID {
@@ -37,13 +44,13 @@ h3 {
     width: 100%;
 }
 .columnStyling {
-    background:rgba(133, 131, 131, 0.445);
+    background:rgba(75, 74, 74, 0.808);
 
 }
 
 p {
-    font-family: 'Sriracha', sans-serif, cursive;
-    color: navy;
+    font-family: 'Fjalla One', sans-serif, cursive;
+    color: #f0ede8;
     font-weight: 400;
     font-size: 3rem;
 }
