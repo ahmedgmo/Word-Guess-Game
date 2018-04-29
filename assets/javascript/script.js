@@ -44,6 +44,9 @@ function startGame() {
     totalGuesses = [];
     wrongGuesses = [];
     randomCityUnderscore = [];
+    
+    document.getElementById('flagDisplay').innerHTML = "";
+    document.getElementById('resultAnswer').textContent = "";
 
     randomCity = capitalCities[Math.floor(Math.random() * capitalCities.length)];
     console.log(randomCity);
@@ -57,6 +60,12 @@ function startGame() {
     document.getElementById('lettersGuessed').textContent = wrongGuesses;
 
 }
+
+function generateFlag(randomCity) {
+    var img = document.createElement("img");
+    img.setAttribute("src", "./assets/images/" + randomCity + ".png");
+    document.getElementById("flagDisplay").append(img);
+ }
 
 function continueGame(input) {
     if (gameStart === true && wrongGuesses.indexOf(input) === -1) {
@@ -85,9 +94,29 @@ function badGuess(input) {
         document.getElementById('remainingLives').textContent = remainingGuesses;
 
     }
+    userLost();
 }
 
+function userLost() {
+    if (remainingGuesses === 0) {
+        losses++;
+        gameStart = false;
+        document.getElementById('lossesCount').textContent = losses;
+        document.getElementById('resultAnswer').textContent = "You lost! Try again... Press Start Game";
+    }
 
+    userWin();
+}
+
+function userWin() {
+    if (randomCity.toLowerCase() === randomCityUnderscore.join('').toLowerCase()) {
+        wins++;
+        gameStart = false;
+        generateFlag(randomCity);
+        document.getElementById('winsCount').textContent = wins;
+        document.getElementById('resultAnswer').textContent = "YOU WON! Do you know what country is this?";
+    }
+}
 
 
 document.getElementById('startGameBtn').addEventListener('click', startGame);
