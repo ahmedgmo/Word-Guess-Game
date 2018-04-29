@@ -29,11 +29,13 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
-h3 {
-   font-family: 'Permanent Marker', cursive;
-   font-size: 2rem;
+.startButton {
+   font-family: 'Fjalla One', cursive;
+   font-size: 3rem;
    text-align: center;
+   background-color: rgb(90, 39, 39);
    color: whitesmoke;
+   bottom: 0;
 
 }
 
