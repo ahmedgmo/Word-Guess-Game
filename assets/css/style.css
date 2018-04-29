@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/World-Map-Wallpaper.jpg");
+    
+}
+
+.jumbotron {
+    background:rgba(133, 131, 131, 0.445);
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 7rem; 
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'Sriracha', cursive;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(202, 20, 20);
+}
+
+h3 {
+   font-family: 'Permanent Marker', cursive;
+   font-size: 2rem;
+   text-align: center;
+   color: whitesmoke;
+}
+
+#EnterID {
+    text-decoration: underline;
+}
+.rowStyling {
+    width: 100%;
+}
+.columnStyling {
+    background:rgba(133, 131, 131, 0.445);
+
+}
+
+p {
+    font-family: 'Sriracha', sans-serif, cursive;
+    color: navy;
+    font-weight: 400;
+    font-size: 3rem;
+}
