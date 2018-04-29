@@ -18,8 +18,25 @@
     <div class="jumbotron">
         <h1 class="gameTitle">Hangman</h1>
         <h2>Capital Cities of the World</h2>
-        <h3>Press
-            <span id="EnterID">ANY KEY</span> to Start</h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p>Wins:
+                        <span id="winsCount"></span>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <h3>Press
+                        <span id="EnterID">ANY KEY</span> to Start</h3>
+                </div>
+                <div class="col-3">
+                    <p>Losses:
+                        <span id="lossesCount"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row rowStyling">
@@ -39,13 +56,18 @@
             <div class="col col-lg-6 columnStyling">
                 <div id="gameZone">
                     <p class="gameBody">Which capital city is this?</p>
-                        <div>
-                            <p><span id="underscored"></span></p>
-                        </div>
-                    <p>Wrong Guesses: <span id="lettersGuessed"></span></p>
-                    <p>Remaining Lives: <span id="remainingLives"></span></p>
-                    <p>Wins: <span id="winsCount"></span></p>
-                    <p>Losses: <span id="lossesCount"></span></p>
+                    <div>
+                        <p>
+                            <span id="underscored"></span>
+                        </p>
+                    </div>
+                    <p>Wrong Guesses:
+                        <span id="lettersGuessed"></span>
+                    </p>
+                    <p>Remaining Lives:
+                        <span id="remainingLives"></span>
+                    </p>
+
                 </div>
             </div>
         </div>
